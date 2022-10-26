@@ -417,6 +417,7 @@ fn inner_main() -> Result<ExitCode> {
 
 fn main() -> ExitCode {
     match inner_main() {
+        // Result
         Ok(code) => code,
         Err(err) => {
             eprintln!("{} {:?}", "error".red().bold(), err);
